@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="./css/g-crousal.css">
+    <link rel="stylesheet" href="./css/g-super-crousal.css">
+    <link rel="stylesheet" href="./css/bootstrap-utilities.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Changeable Title</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark align-items-center bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="./signUp.html">Signup</a></li>
+                            <li><a class="dropdown-item" href="https://munirrajpoot.github.io/User_Demo/">User Dashboard</a></li>
+                            <li><a class="dropdown-item" href="https://munirrajpoot.github.io/Admin_Demo/">Admin Dashboard</a></li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Client</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+
+                </ul>
+
+                <ul class="list-inline ms-auto menu-social-icon mb-0 py-2 py-lg-0">
+                    <li class="list-inline-item ms-0">
+                        <a href="#" class="menu-social-link"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-facebook icon-xs sw_1-5">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="menu-social-link"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-twitter icon-xs sw_1-5">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="menu-social-link"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-instagram icon-xs sw_1-5">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg></a>
+                    </li>
+                    <li class="list-inline-item me-0">
+                        <a href="#" class="menu-social-link"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-linkedin icon-xs sw_1-5">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Main section starting -->
+    <section class="hero-1-bg bg-light" style="background-image: url(images/hero-1-bg-img.png)" id="home">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-medium mb-4">Hello,</h1>
+                    <h1 class="hero-1-title fw-normal text-dark mb-4">We Help You To Boost Your Business</h1>
+                    <p class="text-muted mb-4 pb-3">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                        fugit, sed quia consequuntur magni dolores eos qui ratione sequinesciunt.</p>
+                    <a href="#" class="btn btn-primary">Get Started <span class="ms-2 right-icon">→</span></a>
+                </div>
+                <div class="col-lg-6 col-md-10">
+                    <div class=" mt-5 mt-lg-0">
+                        <img src="images/hero-img.png" alt="" class="img-fluid d-block mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main section Ending -->
+
+
+    <!-- About Section starting -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="text-center mb-5">
+                        <h2>About Us</h2>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                            assumenda, minus modi, nemo delectus laudantium vel nisi nam voluptates voluptas quia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-3">
+                <div class="col-lg-4">
+                    <h2 class="fw-normal line-height-1_4 mb-4">Productive &amp; Customizable For <span
+                            class="fw-medium">Developers</span></h2>
+                    <p class="text-muted mb-4">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                        nihil atque corrupti molestiae.</p>
+                    <p class="f-17 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-grid icon-xs text-primary icon-fill-primary icon me-2">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg> Marketing program activities</p>
+                    <p class="f-17 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-layout icon-xs text-primary icon-fill-primary icon me-2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg> Customization product</p>
+                    <p class="f-17 text-muted mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-monitor icon-xs text-primary icon-fill-primary icon me-2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg> At vero eos accusamus iusto</p>
+                    <a href="#" class="read-more f-18">More Information <span class="ms-2 right-icon f-24">→</span></a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <div class="bg-soft-primary about-img rounded">
+                            <img src="https://dummyimage.com/600x400/bfbfbf/3d3d3d" alt=""
+                                class="img-fluid d-block mx-auto">
+                        </div>
+                        <div class="mt-3">
+                            <p class="text-uppercase text-muted mb-2 f-13">Development</p>
+                            <h4 class="f-18">Product Development</h4>
+                            <p class="text-muted">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                fugit sed quia consequuntur magni.</p>
+                            <a href="#" class="read-more">Read More <span class="ms-2 right-icon">→</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <div class="bg-soft-info about-img rounded">
+                            <img src="https://dummyimage.com/600x400/bfbfbf/3d3d3d" alt=""
+                                class="img-fluid d-block mx-auto">
+                        </div>
+                        <div class="mt-3">
+                            <p class="text-uppercase text-muted mb-2 f-13">Marketing</p>
+                            <h4 class="f-18">Marketing Product</h4>
+                            <p class="text-muted">Temporibus autem quibusdam a officiis debitis aut rerum necessitatibus
+                                saepe eveniet ut et voluptates repudiandae.</p>
+                            <a href="#" class="read-more">Read More <span class="ms-2 right-icon">→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section Ending -->
+
+
+    <!-- Service section starting -->
+    <section class="section bg-light" id="services">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="text-center mb-5">
+                        <h2>Our Services</h2>
+                        <p class="text-muted">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis
+                            suscipit laboriosam nisi commodi consequatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card service-box text-center p-4">
+                        <div class="service-icon-bg mx-auto avatar-xxl p-4"
+                            style="background-image: url(images/service-icon-bg.png)">
+                            <div class="service-box-icon justify-content-center">
+                                <img src="./images/icon-1.png" alt="" class="img-fluid d-block">
+                            </div>
+                        </div>
+                        <h4 class="service-title mt-4 mb-3 f-18">Awesome Support</h4>
+                        <p class="service-subtitle mb-4 f-15">Omnicos directe al desirabilite de une nov lingua franca a
+                            refusa continuar payar custosi traductores.</p>
+                        <a href="#" class="read-more">More<span class="right-icon ms-2">→</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card service-box text-center p-4">
+                        <div class="service-icon-bg mx-auto avatar-xxl p-4"
+                            style="background-image: url(images/service-icon-bg.png)">
+                            <div class="service-box-icon justify-content-center">
+                                <img src="./images/icon-1.png" alt="" class="img-fluid d-block">
+                            </div>
+                        </div>
+                        <h4 class="service-title mt-4 mb-3 f-18">Analytics Security</h4>
+                        <p class="service-subtitle mb-4 f-15">Omnicos directe al desirabilite de une nov lingua franca a
+                            refusa continuar payar custosi traductores.</p>
+                        <a href="#" class="read-more">More<span class="right-icon ms-2">→</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card service-box text-center p-4">
+                        <div class="service-icon-bg mx-auto avatar-xxl p-4"
+                            style="background-image: url(images/service-icon-bg.png)">
+                            <div class="service-box-icon justify-content-center">
+                                <img src="./images/icon-1.png" alt="" class="img-fluid d-block">
+                            </div>
+                        </div>
+                        <h4 class="service-title mt-4 mb-3 f-18">Data Privacy</h4>
+                        <p class="service-subtitle mb-4 f-15">Omnicos directe al desirabilite de une nov lingua franca a
+                            refusa continuar payar custosi traductores.</p>
+                        <a href="#" class="read-more">More<span class="right-icon ms-2">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service section Ending -->
+
+    <!-- Our features Starting-->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="text-center mb-5">
+                        <h2>Our Features</h2>
+                        <p class="text-muted">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis
+                            suscipit laboriosam nisi commodi consequatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features-content">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-work" role="tabpanel"
+                                aria-labelledby="v-pills-work-tab">
+                                <img src="https://dummyimage.com/600x400/bfbfbf/3d3d3d" alt=""
+                                    class="img-fluid d-block mx-auto">
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-marketing" role="tabpanel"
+                                aria-labelledby="v-pills-marketing-tab">
+                                <img src="https://dummyimage.com/600x400/bfbfbf/3d3d3d" alt=""
+                                    class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-feedback" role="tabpanel"
+                                aria-labelledby="v-pills-feedback-tab">
+                                <img src="https://dummyimage.com/600x400/bfbfbf/3d3d3d" alt=""
+                                    class="img-fluid d-block mx-auto">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1  order-1 order-lg-2">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-work-tab" data-toggle="pill" href="#v-pills-work"
+                                role="tab" aria-controls="v-pills-work" aria-selected="true">
+                                <h4 class="text-dark f-18">Works With Existing Apps</h4>
+                                <p class="text-muted f-15">At solmen necessi a uniform grammatica pronunciation sommun
+                                    plu paroles ma quande.</p>
+                                <p class="text-primary mb-0 read-more">More Information<span
+                                        class="right-icon ms-2">→</span></p>
+                            </a>
+                            <a class="nav-link" id="v-pills-marketing-tab" data-toggle="pill" href="#v-pills-marketing"
+                                role="tab" aria-controls="v-pills-marketing" aria-selected="false">
+                                <h4 class="text-dark f-18">Easy Email Marketing</h4>
+                                <p class="text-muted f-15">At solmen necessi a uniform grammatica pronunciation sommun
+                                    plu paroles ma quande.</p>
+                                <p class="text-primary mb-0 read-more">More Information<span
+                                        class="right-icon ms-2">→</span></p>
+                            </a>
+                            <a class="nav-link" id="v-pills-feedback-tab" data-toggle="pill" href="#v-pills-feedback"
+                                role="tab" aria-controls="v-pills-feedback" aria-selected="false">
+                                <h4 class="text-dark f-18">Get Private Customers Feedback</h4>
+                                <p class="text-muted f-15">At solmen necessi a uniform grammatica pronunciation sommun
+                                    plu paroles ma quande.</p>
+                                <p class="text-primary mb-0 read-more">More Information<span
+                                        class="right-icon ms-2">→</span></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our features Ending-->
+
+
+
+    <!-- Our latest Project starting -->
+    <section class="section bg-light" id="project">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="text-center mb-5">
+                        <h2>Our Latest Project</h2>
+                        <p class="text-muted">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis
+                            suscipit laboriosam nisi commodi consequatur.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-box mb-4">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img src="https://dummyimage.com/600x400/bfbfbf/3d3d3d" alt=""
+                                class="img-fluid d-block mx-auto shadow">
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <a href="#">
+                                        <div class="project-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-eye icon">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <h4 class="f-17 mb-1"><a href="" class="text-dark">Professional Designer</a></h4>
+                            <p class="text-muted">UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-box mb-4">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img src="https://dummyimage.com/600x400/bfbfbf/3d3d3d" alt=""
+                                class="img-fluid d-block mx-auto shadow">
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <a href="#">
+                                        <div class="project-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-eye icon">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-3">
+                            <h4 class="f-17 mb-1"><a href="" class="text-dark">Product Designer</a></h4>
+                            <p class="text-muted">Web Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-box mb-4">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img src="https://dummyimage.com/600x400/bfbfbf/3d3d3d" alt=""
+                                class="img-fluid d-block mx-auto shadow">
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <a href="#">
+                                        <div class="project-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-eye icon">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-3">
+                            <h4 class="f-17 mb-1"><a href="" class="text-dark">Design Development</a></h4>
+                            <p class="text-muted">PHP Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-box mb-4">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img src="https://dummyimage.com/600x400/bfbfbf/3d3d3d" alt=""
+                                class="img-fluid d-block mx-auto shadow">
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <a href="#">
+                                        <div class="project-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-eye icon">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-3">
+                            <h4 class="f-17 mb-1"><a href="" class="text-dark">Product Designer</a></h4>
+                            <p class="text-muted">React Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-box mb-4">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img src="https://dummyimage.com/600x400/bfbfbf/3d3d3d" alt=""
+                                class="img-fluid d-block mx-auto shadow">
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <a href="#">
+                                        <div class="project-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-eye icon">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-3">
+                            <h4 class="f-17 mb-1"><a href="" class="text-dark">Design Development</a></h4>
+                            <p class="text-muted">UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-box mb-4">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img src="https://dummyimage.com/600x400/bfbfbf/3d3d3d" alt=""
+                                class="img-fluid d-block mx-auto shadow">
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <a href="#">
+                                        <div class="project-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-eye icon">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-3">
+                            <h4 class="f-17 mb-1"><a href="" class="text-dark">Graphic Development</a></h4>
+                            <p class="text-muted">Web Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our latest Project Ending -->
+
+
+    <!-- Our Clients Starting -->
+    <section class="section" id="clients">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="text-center mb-5">
+                        <h2>What Our Customers Say</h2>
+                        <p class="text-muted">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis
+                            suscipit laboriosam nisi commodi consequatur.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl-carousel owl-theme testi-content owl-loaded owl-drag" id="testi-clients">
+
+
+
+
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage"
+                                style="transition: all 0.25s ease 0s; width: 3787px; transform: translate3d(-1136px, 0px, 0px);">
+                                <div class="owl-item cloned" style="width: 358.667px; margin-right: 20px;">
+                                    <div class="item">
+                                        <div class="testi-box text-center m-2">
+                                            <div class="card border-0 shadow p-4 mb-4">
+                                                <div class="mt-1 mb-3">
+                                                    <img src="images/testi-icon.png" alt=""
+                                                        class="testi-icon img-fluid d-block mx-auto w-auto">
+                                                </div>
+                                                <p class="text-muted mb-0 f-15">Et harum quidem rerum facilis expedita
+                                                    distinctio nam libero tempore soluta nobis optio cumque.</p>
+                                            </div>
+                                            <div class="test-user-info">
+                                                <div class="avatar-md mx-auto">
+                                                    <img src="images/user/img-2.jpg" alt=""
+                                                        class="img-fluid d-block rounded-circle testi-user-img">
+                                                </div>
+                                                <h5 class="f-17 mt-3 mb-1">Sammie Lewis</h5>
+                                                <p class="text-muted f-14">UI/UX Designer, USA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 358.667px; margin-right: 20px;">
+                                    <div class="item">
+                                        <div class="testi-box text-center m-2">
+                                            <div class="card border-0 shadow p-4 mb-4">
+                                                <div class="mt-1 mb-3">
+                                                    <img src="images/testi-icon.png" alt=""
+                                                        class="testi-icon img-fluid d-block mx-auto w-auto">
+                                                </div>
+                                                <p class="text-muted mb-0 f-15">Et harum quidem rerum facilis expedita
+                                                    distinctio nam libero tempore soluta nobis optio cumque.</p>
+                                            </div>
+                                            <div class="test-user-info">
+                                                <div class="avatar-md mx-auto">
+                                                    <img src="images/user/img-3.jpg" alt=""
+                                                        class="img-fluid d-block rounded-circle testi-user-img">
+                                                </div>
+                                                <h5 class="f-17 mt-3 mb-1">Sarah Levine</h5>
+                                                <p class="text-muted f-14">PHP Developer, USA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 358.667px; margin-right: 20px;">
+                                    <div class="item">
+                                        <div class="testi-box text-center m-2">
+                                            <div class="card border-0 shadow p-4 mb-4">
+                                                <div class="mt-1 mb-3">
+                                                    <img src="images/testi-icon.png" alt=""
+                                                        class="testi-icon img-fluid d-block mx-auto w-auto">
+                                                </div>
+                                                <p class="text-muted mb-0 f-15">Et harum quidem rerum facilis expedita
+                                                    distinctio nam libero tempore soluta nobis optio cumque.</p>
+                                            </div>
+                                            <div class="test-user-info">
+                                                <div class="avatar-md mx-auto">
+                                                    <img src="images/user/img-4.jpg" alt=""
+                                                        class="img-fluid d-block rounded-circle testi-user-img">
+                                                </div>
+                                                <h5 class="f-17 mt-3 mb-1">Bobby Kelly</h5>
+                                                <p class="text-muted f-14">Graphic Designer, USA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 358.667px; margin-right: 20px;">
+                                    <div class="item">
+                                        <div class="testi-box text-center m-2">
+                                            <div class="card border-0 shadow p-4 mb-4">
+                                                <div class="mt-1 mb-3">
+                                                    <img src="images/testi-icon.png" alt=""
+                                                        class="testi-icon img-fluid d-block mx-auto w-auto">
+                                                </div>
+                                                <p class="text-muted mb-0 f-15">Et harum quidem rerum facilis expedita
+                                                    distinctio nam libero tempore soluta nobis optio cumque.</p>
+                                            </div>
+                                            <div class="test-user-info">
+                                                <div class="avatar-md mx-auto">
+                                                    <img src="images/user/img-1.jpg" alt=""
+                                                        class="img-fluid d-block rounded-circle testi-user-img">
+                                                </div>
+                                                <h5 class="f-17 mt-3 mb-1">Joshua Vargas</h5>
+                                                <p class="text-muted f-14">Web Developer, USA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active center" style="width: 358.667px; margin-right: 20px;">
+                                    <div class="item">
+                                        <div class="testi-box text-center m-2">
+                                            <div class="card border-0 shadow p-4 mb-4">
+                                                <div class="mt-1 mb-3">
+                                                    <img src="images/testi-icon.png" alt=""
+                                                        class="testi-icon img-fluid d-block mx-auto w-auto">
+                                                </div>
+                                                <p class="text-muted mb-0 f-15">Et harum quidem rerum facilis expedita
+                                                    distinctio nam libero tempore soluta nobis optio cumque.</p>
+                                            </div>
+                                            <div class="test-user-info">
+                                                <div class="avatar-md mx-auto">
+                                                    <img src="images/user/img-2.jpg" alt=""
+                                                        class="img-fluid d-block rounded-circle testi-user-img">
+                                                </div>
+                                                <h5 class="f-17 mt-3 mb-1">Sammie Lewis</h5>
+                                                <p class="text-muted f-14">UI/UX Designer, USA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 358.667px; margin-right: 20px;">
+                                    <div class="item">
+                                        <div class="testi-box text-center m-2">
+                                            <div class="card border-0 shadow p-4 mb-4">
+                                                <div class="mt-1 mb-3">
+                                                    <img src="images/testi-icon.png" alt=""
+                                                        class="testi-icon img-fluid d-block mx-auto w-auto">
+                                                </div>
+                                                <p class="text-muted mb-0 f-15">Et harum quidem rerum facilis expedita
+                                                    distinctio nam libero tempore soluta nobis optio cumque.</p>
+                                            </div>
+                                            <div class="test-user-info">
+                                                <div class="avatar-md mx-auto">
+                                                    <img src="images/user/img-3.jpg" alt=""
+                                                        class="img-fluid d-block rounded-circle testi-user-img">
+                                                </div>
+                                                <h5 class="f-17 mt-3 mb-1">Sarah Levine</h5>
+                                                <p class="text-muted f-14">PHP Developer, USA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 358.667px; margin-right: 20px;">
+                                    <div class="item">
+                                        <div class="testi-box text-center m-2">
+                                            <div class="card border-0 shadow p-4 mb-4">
+                                                <div class="mt-1 mb-3">
+                                                    <img src="images/testi-icon.png" alt=""
+                                                        class="testi-icon img-fluid d-block mx-auto w-auto">
+                                                </div>
+                                                <p class="text-muted mb-0 f-15">Et harum quidem rerum facilis expedita
+                                                    distinctio nam libero tempore soluta nobis optio cumque.</p>
+                                            </div>
+                                            <div class="test-user-info">
+                                                <div class="avatar-md mx-auto">
+                                                    <img src="images/user/img-4.jpg" alt=""
+                                                        class="img-fluid d-block rounded-circle testi-user-img">
+                                                </div>
+                                                <h5 class="f-17 mt-3 mb-1">Bobby Kelly</h5>
+                                                <p class="text-muted f-14">Graphic Designer, USA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 358.667px; margin-right: 20px;">
+                                    <div class="item">
+                                        <div class="testi-box text-center m-2">
+                                            <div class="card border-0 shadow p-4 mb-4">
+                                                <div class="mt-1 mb-3">
+                                                    <img src="images/testi-icon.png" alt=""
+                                                        class="testi-icon img-fluid d-block mx-auto w-auto">
+                                                </div>
+                                                <p class="text-muted mb-0 f-15">Et harum quidem rerum facilis expedita
+                                                    distinctio nam libero tempore soluta nobis optio cumque.</p>
+                                            </div>
+                                            <div class="test-user-info">
+                                                <div class="avatar-md mx-auto">
+                                                    <img src="images/user/img-1.jpg" alt=""
+                                                        class="img-fluid d-block rounded-circle testi-user-img">
+                                                </div>
+                                                <h5 class="f-17 mt-3 mb-1">Joshua Vargas</h5>
+                                                <p class="text-muted f-14">Web Developer, USA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 358.667px; margin-right: 20px;">
+                                    <div class="item">
+                                        <div class="testi-box text-center m-2">
+                                            <div class="card border-0 shadow p-4 mb-4">
+                                                <div class="mt-1 mb-3">
+                                                    <img src="images/testi-icon.png" alt=""
+                                                        class="testi-icon img-fluid d-block mx-auto w-auto">
+                                                </div>
+                                                <p class="text-muted mb-0 f-15">Et harum quidem rerum facilis expedita
+                                                    distinctio nam libero tempore soluta nobis optio cumque.</p>
+                                            </div>
+                                            <div class="test-user-info">
+                                                <div class="avatar-md mx-auto">
+                                                    <img src="images/user/img-2.jpg" alt=""
+                                                        class="img-fluid d-block rounded-circle testi-user-img">
+                                                </div>
+                                                <h5 class="f-17 mt-3 mb-1">Sammie Lewis</h5>
+                                                <p class="text-muted f-14">UI/UX Designer, USA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 358.667px; margin-right: 20px;">
+                                    <div class="item">
+                                        <div class="testi-box text-center m-2">
+                                            <div class="card border-0 shadow p-4 mb-4">
+                                                <div class="mt-1 mb-3">
+                                                    <img src="images/testi-icon.png" alt=""
+                                                        class="testi-icon img-fluid d-block mx-auto w-auto">
+                                                </div>
+                                                <p class="text-muted mb-0 f-15">Et harum quidem rerum facilis expedita
+                                                    distinctio nam libero tempore soluta nobis optio cumque.</p>
+                                            </div>
+                                            <div class="test-user-info">
+                                                <div class="avatar-md mx-auto">
+                                                    <img src="images/user/img-3.jpg" alt=""
+                                                        class="img-fluid d-block rounded-circle testi-user-img">
+                                                </div>
+                                                <h5 class="f-17 mt-3 mb-1">Sarah Levine</h5>
+                                                <p class="text-muted f-14">PHP Developer, USA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- Footer -->
+    <section class="footer" style="background-image: url(images/hero-1-bg-img.png)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mb-5">
+                        <img src="https://dummyimage.com/500x500/bfbfbf/3d3d3d" alt="" height="28">
+                        <p class="text-white-50 my-4">Cras ultricies mi eu turpis sit hendrerit fringilla vestibulum ante ipsum primis in faucibus ultrices posuere cubilia.</p>
+                        <a href="#" class="text-white-70"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram icon me-1"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> Join Us In Instagram</a>
+                    </div>
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="text-white f-22 fw-normal mb-3">Customer</h4>
+                            <ul class="list-unstyled footer-sub-menu">
+                                <li><a href="#" class="footer-link">Works</a></li>
+                                <li><a href="#" class="footer-link">Strategy</a></li>
+                                <li><a href="#" class="footer-link">Releases</a></li>
+                                <li><a href="#" class="footer-link">Press</a></li>
+                                <li><a href="#" class="footer-link">Mission</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="text-white f-22 fw-normal mb-3">Product</h4>
+                            <ul class="list-unstyled footer-sub-menu">
+                                <li><a href="#" class="footer-link">Tranding</a></li>
+                                <li><a href="#" class="footer-link">Popular</a></li>
+                                <li><a href="#" class="footer-link">Customers</a></li>
+                                <li><a href="#" class="footer-link">Features</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="text-white f-22 fw-normal mb-3">Learn More</h4>
+                            <ul class="list-unstyled footer-sub-menu">
+                                <li><a href="#" class="footer-link">Developers</a></li>
+                                <li><a href="#" class="footer-link">Support</a></li>
+                                <li><a href="#" class="footer-link">Customer Service</a></li>
+                                <li><a href="#" class="footer-link">Get Started</a></li>
+                                <li><a href="#" class="footer-link">Guide</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center mt-5">
+                        <p class="text-white-50 f-15 mb-0"><script>document.write(new Date().getFullYear())</script>2023 © lorem ipsum. All right reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <!-- Our Clients Ending -->
+    <script src="./js/jquery.min.js"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/scrollspy.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/feather.min.js"></script>
+    <script src="./js/gcrousal.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $('#testi-clients').owlCarousel({
+            loop: true,
+            center: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            margin: 20,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
